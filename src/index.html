@@ -22,7 +22,7 @@
 
     <div class="d-flex justify-content-center">
         <form class="w-50">
-            <input type="text" id="user-id" class="form-control" placeholder="ID" autocomplete="off">
+            <input type="text" id="user-id" class="form-control" readonly placeholder="ID" autocomplete="off">
             <input type="text" id="product-name" class="form-control" placeholder="Product Name" autocomplete="off">
             <div class="row">
                 <div class="col">
@@ -42,6 +42,39 @@
         <button class="btn btn-primary" id="btn-read">Read</button>
         <button class="btn btn-warning" id="btn-update">Update</button>
         <button class="btn btn-danger" id="btn-delete">Delete All</button>
+    </div>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
