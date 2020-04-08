@@ -1,8 +1,4 @@
-// Create database
-const db = new Dexie('myDb');
-db.version(1).stores({
-    friends: `name, age`
-})
+// Importing the database function
+import productdb from './Module.js';
 
-// Open the database
-db.open();
+productdb();
