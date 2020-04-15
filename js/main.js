@@ -17,3 +17,8 @@ const btncreate = document.getElementById("btn-create");
 const btnread = document.getElementById("btn-read");
 const btnupdate = document.getElementById("btn-update");
 const btndelete = document.getElementById("btn-delete");
+
+// Insert vlue using ceate button
+btncreate.onclick = (event) => {
+
+}

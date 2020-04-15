@@ -8,4 +8,9 @@ const productdb = (dbname, table) => {
     return db;
 }
 
+// Insert function
+const bulkcreate = (dbtable, data) => {
+    dbtable.bulkAdd([data]);
+}
+
 export default productdb;
