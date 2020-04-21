@@ -1,5 +1,7 @@
 // Importing the database function
-import productdb from './Module.js';
+import productdb, {
+    bulkcreate
+} from './Module.js';
 
 // Spicifying arguments
 productdb("Productdb", {
@@ -20,5 +22,10 @@ const btndelete = document.getElementById("btn-delete");
 
 // Insert vlue using ceate button
 btncreate.onclick = (event) => {
-
+    let flag = bulkcreate(db.products, {
+        name: proname.value,
+        seller: seller.value,
+        price: price.value
+    })
+    console.log(flag);
 }

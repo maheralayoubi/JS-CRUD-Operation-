@@ -13,8 +13,11 @@ const bulkcreate = (dbtable, data) => {
     let flag = empty(data);
     if (flag) {
         dbtable.bulkAdd([data]);
-        console.log('object');
+        console.log("Data Inserted Successfully...!");
+    } else {
+        console.log("Please Provide Data...!");
     }
+    return flag;
 }
 
 // Check text box validation
@@ -32,3 +35,7 @@ const empty = object => {
 }
 
 export default productdb;
+
+export {
+    bulkcreate
+}
