@@ -10,7 +10,25 @@ const productdb = (dbname, table) => {
 
 // Insert function
 const bulkcreate = (dbtable, data) => {
-    dbtable.bulkAdd([data]);
+    let flag = empty(data);
+    if (flag) {
+        dbtable.bulkAdd([data]);
+        console.log('object');
+    }
+}
+
+// Check text box validation
+const empty = object => {
+    let flag = false;
+
+    for (const value in object) {
+        if (object[value] != "" && object.hasOwnProperty(value)) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+    }
+    return flag;
 }
 
 export default productdb;
