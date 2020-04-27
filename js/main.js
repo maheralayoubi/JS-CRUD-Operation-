@@ -4,7 +4,7 @@ import productdb, {
 } from './Module.js';
 
 // Spicifying arguments
-productdb("Productdb", {
+let db = productdb("Productdb", {
     products: `++id, name, seller, price`
 });
 
@@ -28,4 +28,10 @@ btncreate.onclick = (event) => {
         price: price.value
     })
     console.log(flag);
+
+    proname.value = seller.value = price.value = "";
+}
+
+const getData = () => {
+
 }
