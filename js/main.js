@@ -30,8 +30,14 @@ btncreate.onclick = (event) => {
     console.log(flag);
 
     proname.value = seller.value = price.value = "";
+    getData();
 }
 
 const getData = () => {
+    let index = 0;
+    let obj = {}
 
+    db.products.count((count) => {
+        console.log(count);
+    })
 }
