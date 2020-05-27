@@ -19,3 +19,23 @@ const bulkcreate = (dbtable, data) => {
     }
     return flag;
 }
+
+// Check text box validation
+const empty = object => {
+    let flag = false;
+
+    for (const value in object) {
+        if (object[value] != "" && object.hasOwnProperty(value)) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+    }
+    return flag;
+}
+
+export default productdb;
+
+export {
+    bulkcreate
+}
