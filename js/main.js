@@ -21,3 +21,23 @@ const btnupdate = document.getElementById("btn-update");
 const btndelete = document.getElementById("btn-delete");
 
 // Insert vlue using ceate button
+btncreate.onclick = (event) => {
+    let flag = bulkcreate(db.products, {
+        name: proname.value,
+        seller: seller.value,
+        price: price.value
+    })
+    console.log(flag);
+
+    proname.value = seller.value = price.value = "";
+    getData();
+}
+
+const getData = () => {
+    let index = 0;
+    let obj = {}
+
+    db.products.count((count) => {
+        console.log(count);
+    })
+}
